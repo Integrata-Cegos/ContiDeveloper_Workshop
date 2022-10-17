@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Television.Api\Television.Api.csproj" />
+    <ProjectReference Include="..\Television.Impl\Television.Impl.csproj" />
+  </ItemGroup>
+
 </Project>
