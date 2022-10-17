@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Watch.Api\Watch.Api.csproj" />
-    <ProjectReference Include="..\Watch.Impl\Watch.Impl.csproj" />
     <ProjectReference Include="..\Instrument.Api\Instrument.Api.csproj" />
     <ProjectReference Include="..\Instrument.Db\Instrument.Db.csproj" />
     <ProjectReference Include="..\Watch.Db\Watch.Db.csproj" />
