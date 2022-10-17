@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Instrument.Impl;
+using Instrument.Api;
 using System.Net.Mime;
 namespace Instruments.Controllers;
 
@@ -7,8 +7,8 @@ namespace Instruments.Controllers;
 [Route("[controller]")]
 public class InstrumentsController : ControllerBase
 {
-    private readonly InstrumentsManager _Manager;
-    public InstrumentsController(InstrumentsManager manager)
+    private readonly IInstrumentOperations _Manager;
+    public InstrumentsController(IInstrumentOperations manager)
     {
         this._Manager = manager;
     }
