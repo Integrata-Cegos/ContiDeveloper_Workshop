@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Watch.Api;
-using Watch.Impl;
 using System.Net.Mime;
 namespace Watchs.Controllers;
 
@@ -8,8 +7,8 @@ namespace Watchs.Controllers;
 [Route("[controller]")]
 public class WatchController : ControllerBase
 {
-    private readonly WatchOperations _WatchOperations;
-    public WatchController(WatchOperations watchOperations)
+    private readonly IWatchOperations _WatchOperations;
+    public WatchController(IWatchOperations watchOperations)
     {
         this._WatchOperations = watchOperations;
     }
