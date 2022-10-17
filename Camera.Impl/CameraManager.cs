@@ -20,7 +20,7 @@ namespace Camera.Impl;
 
         public Camera.Api.Camera FindById(int id)
         {
-            return cameras.Where(x => x.Key == id).Single();
+            return cameras[id];
         }
 
         public List<Camera.Api.Camera> FindAll()
