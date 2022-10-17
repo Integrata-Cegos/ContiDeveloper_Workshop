@@ -59,12 +59,13 @@ public class CameraController : ControllerBase
     }
 
     [HttpPut]
-    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes("application/json")]
     public ActionResult Update([FromBody] Camera.Api.Camera camera)
     {
         try
         {
-            return _cameraManager.Update(camera);
+            _cameraManager.Update(camera);
+            return new EmptyResult();
         }
         catch
         {
@@ -73,12 +74,12 @@ public class CameraController : ControllerBase
     }
 
     [HttpDelete]
-    [Produces(MediaTypeNames.Application.Json)]
     public ActionResult Delete([FromHeader(Name="Id")] int id)
     {
         try
         {
-            return _cameraManager.DeleteById(id);
+            _cameraManager.DeleteById(id);
+            return new EmptyResult();
         }
         catch
         {

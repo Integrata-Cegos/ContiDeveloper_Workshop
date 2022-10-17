@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Camera.Api\Camera.Api.csproj" />
+    <ProjectReference Include="..\Camera.Impl\Camera.Impl.csproj" />
+  </ItemGroup>
+
 </Project>
