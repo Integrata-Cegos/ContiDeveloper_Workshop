@@ -1,4 +1,3 @@
-using Camera.Impl;
 using Camera.Api;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
@@ -9,9 +8,9 @@ namespace Camera.Controller;
 [Route("[controller]")]
 public class CameraController : ControllerBase
 {
-    private readonly Camera.Impl.CameraManager _cameraManager;
+    private readonly ICameraOperations _cameraManager;
 
-    public CameraController(Camera.Impl.CameraManager cameraManager)
+    public CameraController(ICameraOperations cameraManager)
     {
         _cameraManager = cameraManager;
     }
