@@ -1,35 +1,48 @@
-﻿using Software.Api;
+﻿using Microsoft.EntityFrameworkCore;
+using Software.Api;
 
 namespace Software.Service;
 public class SoftwareService : ISoftwareOperations
 {
-    int UniqueCounter = 0;
-    List<Api.Software> db = new();
+    SoftwareContext db = new();
     public int Create(string name, double price)
     {
-        UniqueCounter++;
-        db.Add(new() { Id = UniqueCounter, name = name, price = price }) ;
-        return UniqueCounter;
+        Software software = new() { Name = name, Price = price };
+        db.Softwares.Add(software);
+        db.SaveChanges();
+        return software.Id;
     }
 
     public void DeleteById(int id)
     {
-        db.RemoveAll(x => x.Id == id);
+        Software software = db.Softwares.Where(x => x.Id == id).First();
+        db.Softwares.Remove(software);
+        db.SaveChanges();
     }
 
     public List<Api.Software> FindAll()
     {
-        return db;
+        List<Api.Software> apisoftwares = new();
+        var dbsoftwares = db.Softwares.ToList();
+        foreach (var dbsoftware in dbsoftwares)
+        {
+            apisoftwares.Add(new() { Id = dbsoftware.Id, name = dbsoftware.Name, price = dbsoftware.Price });
+        }
+        return apisoftwares;
     }
 
     public Api.Software FindById(int id)
     {
-        return db.FindAll(x => x.Id == id).First();
+        var dbitem = db.Softwares.Where(x => x.Id == id).First();
+
+        return new() { Id = dbitem.Id, name = dbitem.Name, price = dbitem.Price };
     }
 
     public void Update(Api.Software entity)
     {
-        db.Where(x => x.Id == entity.Id).First().name = entity.name;
-        db.Where(x => x.Id == entity.Id).First().price = entity.price;
+        var dbitem = db.Softwares.Where(x => x.Id == entity.Id).First();
+        dbitem.Price = entity.price;
+        dbitem.Name = entity.name;
+        db.SaveChanges();
     }
 }
