@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Car.DB\Car.DB.csproj" />
     <ProjectReference Include="..\Software.Service\Software.Service.csproj" />
+    <ProjectReference Include="..\TomSoftware.Service\TomSoftware.Service.csproj" />
+    <ProjectReference Include="..\WorkShopContext\WorkShopContext.csproj" />
   </ItemGroup>
 
 </Project>

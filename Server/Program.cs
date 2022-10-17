@@ -1,16 +1,22 @@
 using Car.DB;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Software.Service;
+using TomSoftware.Service;
+using WorkShopContext;
+using WorkShopContext.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddDbContext<WorkShopDBContext>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new SoftwareService());
 builder.Services.AddSingleton(new CarService());
+builder.Services.AddScoped<ITomSoftwareService, TomSoftwareService<WorkShopDBContext>>();
 
 var app = builder.Build();
 
