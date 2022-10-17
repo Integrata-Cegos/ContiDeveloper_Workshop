@@ -27,8 +27,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Television.Api", "Televisio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watch.Api", "Watch.Api\Watch.Api.csproj", "{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera.Impl", "Camera.Impl\Camera.Impl.csproj", "{0F1908E7-37BB-419B-868B-FB9FDC95FA93}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Api", "Instrument.Api\Instrument.Api.csproj", "{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}"
 EndProject
 Global

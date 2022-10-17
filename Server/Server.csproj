@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Camera.Api\Camera.Api.csproj" />
-    <ProjectReference Include="..\Camera.Impl\Camera.Impl.csproj" />
+    <ProjectReference Include="..\CameraDb\CameraDb.csproj" />
   </ItemGroup>
 
 </Project>

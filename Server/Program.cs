@@ -1,4 +1,5 @@
-using Camera.Impl;
+using Camera.Api;
+using CameraDb;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<CameraManager>(new CameraManager());
+builder.Services.AddSingleton<ICameraOperations>(new CameraDatabaseAccess());
 
 var app = builder.Build();
 
