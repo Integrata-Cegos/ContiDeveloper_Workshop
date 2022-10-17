@@ -1,14 +1,14 @@
 ﻿using Camera.Api;
-using CameraDb.Entities;
+using Camera.Db.Entities;
 
-namespace CameraDb;
+namespace Camera.Db;
 
 public class CameraDatabaseAccess : ICameraOperations
 {
     public int Create(string name, double price)
     {
         var dbContext = new workshopContext();
-        var Camera = new CameraDb.Entities.Camera();
+        var Camera = new Camera.Db.Entities.Camera();
         Camera.Name = name;
         Camera.Price = price;
         dbContext.Cameras.Add(Camera);
@@ -34,14 +34,14 @@ public class CameraDatabaseAccess : ICameraOperations
     public void DeleteById(int id)
     {
         var dbContext = new workshopContext();
-        var Camera = new CameraDb.Entities.Camera();
+        var Camera = new Camera.Db.Entities.Camera();
         Camera.Id = id;
         dbContext.Attach(Camera);
         dbContext.Remove(Camera);
         dbContext.SaveChanges();
     }
 
-    private Camera.Api.Camera Assemble(CameraDb.Entities.Camera entity)
+    private Camera.Api.Camera Assemble(Camera.Db.Entities.Camera entity)
     {
         var Camera = new Camera.Api.Camera();
         Camera.Id = entity.Id;

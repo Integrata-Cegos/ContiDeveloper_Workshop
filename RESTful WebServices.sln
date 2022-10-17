@@ -29,9 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watch.Api", "Watch.Api\Watc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Api", "Instrument.Api\Instrument.Api.csproj", "{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Impl", "Instrument.Impl\Instrument.Impl.csproj", "{7923BA34-630D-490E-ACD3-942F663FF006}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Db", "Instrument.Db\Instrument.Db.csproj", "{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Television.Db", "Television.Db\Television.Db.csproj", "{4C364670-A444-4F1C-B45B-CAD64A625963}"
 EndProject
 Global

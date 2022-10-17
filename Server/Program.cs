@@ -1,9 +1,7 @@
-using Instrument.Impl;
-using Camera.Api;
-using CameraDb;
+using Instrument.Db;
+using Camera.Db;
+using Television.Db;
 
-using Television.Impl;
-using Television.Api;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,10 +10,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<TelevisionManager>(new TelevisionManager());
+builder.Services.AddSingleton<TelevisionDatabaseAccess>(new TelevisionDatabaseAccess());
 
-builder.Services.AddSingleton<InstrumentsManager>(new InstrumentsManager());
-builder.Services.AddSingleton<ICameraOperations>(new CameraDatabaseAccess());
+builder.Services.AddSingleton<InstrumentDatabaseAccess>(new InstrumentDatabaseAccess());
+builder.Services.AddSingleton<CameraDatabaseAccess>(new CameraDatabaseAccess());
 
 var app = builder.Build();
 

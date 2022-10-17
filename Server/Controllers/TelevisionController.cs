@@ -1,4 +1,3 @@
-using Television.Impl;
 using Television.Api;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
@@ -9,9 +8,9 @@ namespace Television.Controller;
 [Route("[controller]")]
 public class TelevisionController : ControllerBase
 {
-    private readonly Television.Impl.TelevisionManager _televisionManager;
+    private readonly ITelevisionOperations _televisionManager;
 
-    public TelevisionController(Television.Impl.TelevisionManager TelevisionManager)
+    public TelevisionController(ITelevisionOperations TelevisionManager)
     {
         _televisionManager = TelevisionManager;
     }

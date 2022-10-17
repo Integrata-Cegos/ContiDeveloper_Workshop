@@ -11,13 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-
-    <ProjectReference Include="..\Instrument.Impl\Instrument.Impl.csproj" />
     <ProjectReference Include="..\Instrument.Api\Instrument.Api.csproj" />
     <ProjectReference Include="..\Camera.Api\Camera.Api.csproj" />
-    <ProjectReference Include="..\CameraDb\CameraDb.csproj" />
+    <ProjectReference Include="..\Camera.Db\CameraDb.csproj" />
     <ProjectReference Include="..\Television.Api\Television.Api.csproj" />
-    <ProjectReference Include="..\Television.Impl\Television.Impl.csproj" />
+    <ProjectReference Include="..\Instrument.Db\Instrument.Db.csproj" />
+    <ProjectReference Include="..\Television.Db\Television.Db.csproj" />
   </ItemGroup>
 
 </Project>
