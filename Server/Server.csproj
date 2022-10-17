@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Instrument.Impl\Instrument.Impl.csproj" />
     <ProjectReference Include="..\Instrument.Api\Instrument.Api.csproj" />
+    <ProjectReference Include="..\Instrument.Db\Instrument.Db.csproj" />
   </ItemGroup>
 
 </Project>
