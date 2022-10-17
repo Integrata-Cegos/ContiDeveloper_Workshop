@@ -9,5 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\Car.Api\Car.Api.csproj" />
+    <ProjectReference Include="..\Car.Impl\Car.Impl.csproj" />
+  </ItemGroup>
 </Project>

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Television.Api", "Televisio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watch.Api", "Watch.Api\Watch.Api.csproj", "{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.Impl", "Car.Impl\Car.Impl.csproj", "{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
