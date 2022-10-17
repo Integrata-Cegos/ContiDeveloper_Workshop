@@ -16,6 +16,8 @@
     <ProjectReference Include="..\Instrument.Api\Instrument.Api.csproj" />
     <ProjectReference Include="..\Camera.Api\Camera.Api.csproj" />
     <ProjectReference Include="..\CameraDb\CameraDb.csproj" />
+    <ProjectReference Include="..\Television.Api\Television.Api.csproj" />
+    <ProjectReference Include="..\Television.Impl\Television.Impl.csproj" />
   </ItemGroup>
 
 </Project>
