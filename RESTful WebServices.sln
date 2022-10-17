@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Api", "Instrumen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Db", "Instrument.Db\Instrument.Db.csproj", "{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watch.Db", "Watch.Db\Watch.Db.csproj", "{FA8156CB-8C16-483D-B9DC-46934062FCEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +98,9 @@ Global
 		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8156CB-8C16-483D-B9DC-46934062FCEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8156CB-8C16-483D-B9DC-46934062FCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8156CB-8C16-483D-B9DC-46934062FCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8156CB-8C16-483D-B9DC-46934062FCEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
