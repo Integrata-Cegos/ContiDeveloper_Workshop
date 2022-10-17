@@ -1,15 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 namespace TomSoftware.Service;
-public class TomSoftwareService<TContext> : ITomSoftwareService where TContext : DbContext
+public class TomSoftwareService
 {
-	public TomSoftwareService(TContext context)
-	{
-
-	}
 
 	public void DoIt()
 	{
-
+        //this.DbContext.Database.EnsureCreated();
 	}
 }

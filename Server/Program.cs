@@ -11,12 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<WorkShopDBContext>();
+string connectionstring = "Data Source=h2908727.stratoserver.net;Initial Catalog=workshop;User ID=teilnehmer;Password=teilnehmer123!;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+builder.Services.AddDbContextFactory<WorkShopDBContext>(o => o.UseSqlServer(connectionstring));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new SoftwareService());
 builder.Services.AddSingleton(new CarService());
-builder.Services.AddScoped<ITomSoftwareService, TomSoftwareService<WorkShopDBContext>>();
+
 
 var app = builder.Build();
 
