@@ -11,8 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+
     <ProjectReference Include="..\Instrument.Impl\Instrument.Impl.csproj" />
     <ProjectReference Include="..\Instrument.Api\Instrument.Api.csproj" />
+    <ProjectReference Include="..\Camera.Api\Camera.Api.csproj" />
+    <ProjectReference Include="..\CameraDb\CameraDb.csproj" />
   </ItemGroup>
 
 </Project>
