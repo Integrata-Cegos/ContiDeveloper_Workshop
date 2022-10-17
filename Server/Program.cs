@@ -1,3 +1,5 @@
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,7 +8,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<Car.Impl.CarService>(new Car.Impl.CarService());
+builder.Services.AddSingleton<Car.Api.ICarOperations>(new Car.DB.CarService());
 
 var app = builder.Build();
 
