@@ -1,3 +1,4 @@
+using Car.DB;
 using Software.Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new SoftwareService());
+builder.Services.AddSingleton(new CarService());
 
 var app = builder.Build();
 
