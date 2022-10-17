@@ -1,0 +1,3 @@
+USE workshop;
+
+SELECT * FROM BOOKS;
