@@ -3,28 +3,33 @@
 namespace Software.Service;
 public class SoftwareService : ISoftwareOperations
 {
+    int UniqueCounter = 0;
+    List<Api.Software> db = new();
     public int Create(string name, double price)
     {
-        throw new NotImplementedException();
+        UniqueCounter++;
+        db.Add(new() { Id = UniqueCounter, name = name, price = price }) ;
+        return UniqueCounter;
     }
 
     public void DeleteById(int id)
     {
-        throw new NotImplementedException();
+        db.RemoveAll(x => x.Id == id);
     }
 
     public List<Api.Software> FindAll()
     {
-        throw new NotImplementedException();
+        return db;
     }
 
     public Api.Software FindById(int id)
     {
-        throw new NotImplementedException();
+        return db.FindAll(x => x.Id == id).First();
     }
 
     public void Update(Api.Software entity)
     {
-        throw new NotImplementedException();
+        db.Where(x => x.Id == entity.Id).First().name = entity.name;
+        db.Where(x => x.Id == entity.Id).First().price = entity.price;
     }
 }
