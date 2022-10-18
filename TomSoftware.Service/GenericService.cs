@@ -61,6 +61,5 @@ public class GenericService<T> : IGenericService<T> where T : class, IEntityBase
 	{
 		_repository.Add(item);
 		_repository.Commit();
-        //this.DbContext.Database.EnsureCreated();
 	}
 }

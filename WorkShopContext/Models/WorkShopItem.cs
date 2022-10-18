@@ -1,7 +1,6 @@
 ﻿namespace WorkShopContext.Models;
 public class WorkShopItem : IEntityBase
 {
-    //public int? Id {get; set;}
     public int ID { get; set; }
     public string? Name {get; set;}
 

@@ -58,6 +58,5 @@ public class RepositoryService<T> : IRepositoryService<T> where T : class, IEnti
     {
         _repository.Add(item);
         _repository.Commit();
-        //this.DbContext.Database.EnsureCreated();
     }
 }
