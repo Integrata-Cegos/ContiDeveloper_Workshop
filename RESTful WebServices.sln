@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Software.Service", "Softwar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.DB", "Car.DB\Car.DB.csproj", "{8C99A868-385C-430E-BEE1-0EC69FC751C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Api", "Instrument.Api\Instrument.Api.csproj", "{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,19 +87,9 @@ Global
 		{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A39BAAE6-41BE-4279-9653-6C498406814E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A39BAAE6-41BE-4279-9653-6C498406814E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A39BAAE6-41BE-4279-9653-6C498406814E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A39BAAE6-41BE-4279-9653-6C498406814E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B1C116E0-3F8B-4C1F-A140-ED66453E5C1A}
+		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
