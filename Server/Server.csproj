@@ -28,6 +28,8 @@
     <ProjectReference Include="..\Instrument.Api\Instrument.Api.csproj" />
     <ProjectReference Include="..\Instrument.Db\Instrument.Db.csproj" />
     <ProjectReference Include="..\Watch.Db\Watch.Db.csproj" />
+    <ProjectReference Include="..\Camera.Api\Camera.Api.csproj" />
+    <ProjectReference Include="..\CameraDb\CameraDb.csproj" />
   </ItemGroup>
 
 </Project>

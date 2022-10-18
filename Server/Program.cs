@@ -1,5 +1,7 @@
 using Watch.Api;
 using Watch.Db;
+using Camera.Api;
+using CameraDb;
 using Instrument.Api;
 using Instrument.Db;
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +14,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IWatchOperations>(new WatchDatabaseAccess());
 builder.Services.AddSingleton<IInstrumentOperations>(new InstrumentDatabaseAccess());
+builder.Services.AddSingleton<ICameraOperations>(new CameraDatabaseAccess());
 builder.Services.AddSingleton<IInstrumentOperations>(new InstrumentDatabaseAccess());
 builder.Services.AddSingleton<Car.Api.ICarOperations>(new Car.DB.CarService());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
