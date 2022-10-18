@@ -21,6 +21,7 @@ public partial class WorkShopDBContext : DbContext
 
 
     public virtual DbSet<WorkShopItem> WorkShopItems { get; set; } = null!;
+    public virtual DbSet<Spielekonsole> Spielekonsolen { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

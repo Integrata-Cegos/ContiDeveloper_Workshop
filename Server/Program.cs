@@ -20,6 +20,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new SoftwareService());
 builder.Services.AddSingleton(new CarService());
 builder.Services.AddScoped<IEntityBaseRepository<WorkShopItem>, EntityBaseRepository<WorkShopItem>>();
+builder.Services.AddScoped<IEntityBaseRepository<Spielekonsole>, EntityBaseRepository<Spielekonsole>>();
 builder.Services.AddScoped<ITomSoftwareService, TomSoftwareService>();
 
 

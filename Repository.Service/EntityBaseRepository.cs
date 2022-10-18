@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WorkShopContext;
 
-namespace WorkShopContext;
+namespace Repository.Service;
 public interface IEntityBase
 {
     int ID { get; set; }

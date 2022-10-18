@@ -29,11 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watch.Api", "Watch.Api\Watc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Software.Service", "Software.Service\Software.Service.csproj", "{A39BAAE6-41BE-4279-9653-6C498406814E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.DB", "Car.DB\Car.DB.csproj", "{8C99A868-385C-430E-BEE1-0EC69FC751C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Car.DB", "Car.DB\Car.DB.csproj", "{8C99A868-385C-430E-BEE1-0EC69FC751C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkShopContext", "WorkShopContext\WorkShopContext.csproj", "{B2262014-4BDB-455A-A933-2A74CE7D57B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkShopContext", "WorkShopContext\WorkShopContext.csproj", "{B2262014-4BDB-455A-A933-2A74CE7D57B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomSoftware.Service", "TomSoftware.Service\TomSoftware.Service.csproj", "{C378A913-2450-4E07-B533-26F9723F86D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomSoftware.Service", "TomSoftware.Service\TomSoftware.Service.csproj", "{C378A913-2450-4E07-B533-26F9723F86D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
