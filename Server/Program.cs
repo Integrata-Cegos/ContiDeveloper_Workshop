@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IInstrumentOperations>(new InstrumentDatabaseAccess());
+builder.Services.AddSingleton<Car.Api.ICarOperations>(new Car.DB.CarService());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
