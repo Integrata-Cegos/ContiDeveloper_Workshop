@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,6 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Car.Api\Car.Api.csproj" />
+    <ProjectReference Include="..\Car.Impl\Car.Impl.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Car.DB\Car.DB.csproj" />
   </ItemGroup>
 
 </Project>
