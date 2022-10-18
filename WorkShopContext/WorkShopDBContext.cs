@@ -20,11 +20,15 @@ public partial class WorkShopDBContext : DbContext
     }
 
 
-    public virtual DbSet<TomSoftware> TomsSoftware { get; set; } = null!;
+    public virtual DbSet<WorkShopItem> WorkShopItems { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         OnModelCreatingPartial(modelBuilder);
+    }
+    public virtual void Commit()
+    {
+        base.SaveChanges();
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

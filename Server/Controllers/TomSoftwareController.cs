@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Software.Service;
 using TomSoftware.Service;
 using WorkShopContext;
+using WorkShopContext.Models;
 
 namespace Server.Controllers;
 
@@ -12,18 +13,27 @@ namespace Server.Controllers;
 [Route("api/TomSoftware")]
 public class TomSoftwareController : ControllerBase
 {
-    private readonly IDbContextFactory<WorkShopDBContext> _contextFactory;
+    private TomSoftwareService _tomSoftwareService;
 
-    public TomSoftwareController(IDbContextFactory<WorkShopDBContext> contextFactory)
-        => _contextFactory = contextFactory;
+    public TomSoftwareController(TomSoftwareService tomSoftwareService)
+    {
+        _tomSoftwareService = tomSoftwareService;
+    }
 
     [HttpPost("Create")]
     public IResult Create()
     {
-        var _db = _contextFactory.CreateDbContext();
-        _db.Database.EnsureCreated();
-        var databaseCreator = _db.GetService<IRelationalDatabaseCreator>();
-        databaseCreator.CreateTables();
+        //var _db = _contextFactory.CreateDbContext();
+        //_db.Database.EnsureCreated();
+        //var databaseCreator = _db.GetService<IRelationalDatabaseCreator>();
+        //databaseCreator.CreateTables();
+        return Results.Ok();
+    }
+
+    [HttpPost("Test")]
+    public IResult Test()
+    {
+        _tomSoftwareService.DoIt();
         return Results.Ok();
     }
 
@@ -36,7 +46,7 @@ public class TomSoftwareController : ControllerBase
     //[HttpGet("FindAll")]
     //public IResult FindAll()
     //{
-    //    return Results.Ok(_softwareService.FindAll());
+    //    return Results.Ok(_s);
     //}
 
     //[HttpDelete("Delete")]
