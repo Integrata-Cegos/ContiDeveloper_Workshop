@@ -1,31 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{DC761EDD-0BCA-4C46-8153-83B6B730D6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{DC761EDD-0BCA-4C46-8153-83B6B730D6E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Api", "Book.Api\Book.Api.csproj", "{380A6FCA-4B41-466B-8C03-3036317EB5C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Book.Api", "Book.Api\Book.Api.csproj", "{380A6FCA-4B41-466B-8C03-3036317EB5C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera.Api", "Camera.Api\Camera.Api.csproj", "{F9FD2EE6-C12C-42B1-8FA2-8EDA86D24F53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Camera.Api", "Camera.Api\Camera.Api.csproj", "{F9FD2EE6-C12C-42B1-8FA2-8EDA86D24F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.Api", "Car.Api\Car.Api.csproj", "{9B8CB245-C0EC-4F88-B13C-D3A084B91EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Car.Api", "Car.Api\Car.Api.csproj", "{9B8CB245-C0EC-4F88-B13C-D3A084B91EE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cd.Api", "Cd.Api\Cd.Api.csproj", "{EA18770A-1D20-4269-A327-C7534B1ED48E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cd.Api", "Cd.Api\Cd.Api.csproj", "{EA18770A-1D20-4269-A327-C7534B1ED48E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dvd.Api", "Dvd.Api\Dvd.Api.csproj", "{6AB122CF-B7B0-4BAF-9DF4-667F9EB6B935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dvd.Api", "Dvd.Api\Dvd.Api.csproj", "{6AB122CF-B7B0-4BAF-9DF4-667F9EB6B935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Api", "Game.Api\Game.Api.csproj", "{0D7C6679-8990-4967-94AD-13BCD5373083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Api", "Game.Api\Game.Api.csproj", "{0D7C6679-8990-4967-94AD-13BCD5373083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook.Api", "Notebook.Api\Notebook.Api.csproj", "{BFEF27F7-53BD-48B3-B4FD-C81569C72E69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notebook.Api", "Notebook.Api\Notebook.Api.csproj", "{BFEF27F7-53BD-48B3-B4FD-C81569C72E69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radio.Api", "Radio.Api\Radio.Api.csproj", "{50D8718D-031C-4BBE-A4F3-E5C8BDD11656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radio.Api", "Radio.Api\Radio.Api.csproj", "{50D8718D-031C-4BBE-A4F3-E5C8BDD11656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Software.Api", "Software.Api\Software.Api.csproj", "{C8469E35-B6EE-418B-A566-05128F93A2A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Software.Api", "Software.Api\Software.Api.csproj", "{C8469E35-B6EE-418B-A566-05128F93A2A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Television.Api", "Television.Api\Television.Api.csproj", "{2F9A91D2-F7ED-4767-B337-F850955E1CCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Television.Api", "Television.Api\Television.Api.csproj", "{2F9A91D2-F7ED-4767-B337-F850955E1CCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watch.Api", "Watch.Api\Watch.Api.csproj", "{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Watch.Api", "Watch.Api\Watch.Api.csproj", "{0D1CE605-8D95-4FAD-AA99-068F4B4BE0CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Software.Service", "Software.Service\Software.Service.csproj", "{A39BAAE6-41BE-4279-9653-6C498406814E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.DB", "Car.DB\Car.DB.csproj", "{8C99A868-385C-430E-BEE1-0EC69FC751C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.Impl", "Car.Impl\Car.Impl.csproj", "{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.Api", "Instrument.Api\Instrument.Api.csproj", "{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}"
 EndProject
@@ -33,9 +39,6 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DC761EDD-0BCA-4C46-8153-83B6B730D6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -90,9 +93,31 @@ Global
 		{0F1908E7-37BB-419B-868B-FB9FDC95FA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F1908E7-37BB-419B-868B-FB9FDC95FA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F1908E7-37BB-419B-868B-FB9FDC95FA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB508386-36CF-420E-B5CA-FEAAB40F9F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39BAAE6-41BE-4279-9653-6C498406814E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39BAAE6-41BE-4279-9653-6C498406814E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39BAAE6-41BE-4279-9653-6C498406814E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39BAAE6-41BE-4279-9653-6C498406814E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C99A868-385C-430E-BEE1-0EC69FC751C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1C116E0-3F8B-4C1F-A140-ED66453E5C1A}
 		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7E7656-AE40-4E2B-981E-72237CD3B2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3A13DF-C7C9-411C-A6AF-F5235DF2727D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
