@@ -1,1 +1,1 @@
-StarApplication
+Planet- and Stars Application
