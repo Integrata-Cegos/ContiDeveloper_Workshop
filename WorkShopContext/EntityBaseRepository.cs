@@ -30,65 +30,6 @@ public interface IEntityBaseRepository<T> where T : class, IEntityBase, new()
 public class EntityBaseRepository<T> : IEntityBaseRepository<T>
             where T : class, IEntityBase, new()
 {
-    #region Properties OLD
-    ////private TContext _dataContext;
-    ////private readonly IDbContextFactory<TContext> _contextFactory;
-    //DbContext _dbContext;
-    //private readonly DbSet<T> _dbSet;
-    //public RepositoryBase(IDbContextFactory<TContext> contextFactory)
-    //{
-    //    _dbContext = contextFactory.CreateDbContext();
-    //    //_dbSet = DbSet<T>;
-    //    //_dbContext = _contextFactory.CreateDbContext();
-    //}
-
-
-    #endregion
-    #region Implementation OLD
-    //public virtual void Add(T entity)
-    //{
-    //    _dbSet.Add(entity);
-    //}
-
-    //public virtual void Update(T entity)
-    //{
-    //    _dbSet.Attach(entity);
-    //    _dbContext.Entry(entity).State = EntityState.Modified;
-    //}
-
-    //public virtual void Delete(T entity)
-    //{
-    //    _dbSet.Remove(entity);
-    //}
-
-    //public virtual void Delete(Expression<Func<T, bool>> where)
-    //{
-    //    IEnumerable<T> objects = _dbSet.Where<T>(where).AsEnumerable();
-    //    foreach (T obj in objects)
-    //        _dbSet.Remove(obj);
-    //}
-
-    //public virtual T GetById(int id)
-    //{
-    //    return _dbSet.Find(id);
-    //}
-
-    //public virtual IEnumerable<T> GetAll()
-    //{
-    //    return _dbSet.ToList();
-    //}
-
-    //public virtual IEnumerable<T> GetMany(Expression<Func<T, bool>> where)
-    //{
-    //    return _dbSet.Where(where).ToList();
-    //}
-
-    //public T Get(Expression<Func<T, bool>> where)
-    //{
-    //    return _dbSet.Where(where).FirstOrDefault<T>();
-    //}
-
-    #endregion
 
     #region Properties
 
@@ -102,15 +43,13 @@ public class EntityBaseRepository<T> : IEntityBaseRepository<T>
     {
         get { return dataContext ?? (dataContext = _contextFactory.CreateDbContext()); }
     }
-    //public EntityBaseRepository(IDbContextFactory<WorkShopDBContext> dbFactory)
-    //{
-    //    DbFactory = dbFactory;
-    //}
+
     #endregion
     public virtual IQueryable<T> GetAll()
     {
         return DbContext.Set<T>();
     }
+
     public virtual IQueryable<T> All
     {
         get

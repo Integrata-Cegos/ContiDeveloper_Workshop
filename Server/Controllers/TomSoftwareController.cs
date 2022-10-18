@@ -21,46 +21,43 @@ public class TomSoftwareController : ControllerBase
     }
 
     [HttpPost("Create")]
-    public IResult Create()
+    public IResult Create([FromHeader(Name = "Name")] string name, [FromHeader(Name = "Price")] double price)
     {
-        //var _db = _contextFactory.CreateDbContext();
-        //_db.Database.EnsureCreated();
-        //var databaseCreator = _db.GetService<IRelationalDatabaseCreator>();
-        //databaseCreator.CreateTables();
+        _tomSoftwareService.Create(new() { Name = name, Price = price });
         return Results.Ok();
     }
 
-    [HttpPost("Test")]
-    public IResult Test()
+    [HttpPost("FindByID")]
+    public IResult FindByID([FromHeader(Name = "Id")] int id)
     {
-        _tomSoftwareService.DoIt();
+        return Results.Ok(_tomSoftwareService.GetByID(id));
+    }
+
+    [HttpGet("FindAll")]
+    public IResult FindAll()
+    {
+        return Results.Ok(_tomSoftwareService.ListAll());
+    }
+
+    [HttpDelete("Delete")]
+    public IResult DelteByID([FromHeader(Name = "Id")] int id)
+    {
+        _tomSoftwareService.DeleteByID(id);
         return Results.Ok();
     }
 
-    //[HttpPost("FindByID")]
-    //public IResult FindByID([FromHeader(Name = "Id")] int id)
-    //{
-    //    return Results.Ok(_softwareService.FindById(id));
-    //}
-
-    //[HttpGet("FindAll")]
-    //public IResult FindAll()
-    //{
-    //    return Results.Ok(_s);
-    //}
-
-    //[HttpDelete("Delete")]
-    //public IResult DelteByID([FromHeader(Name = "Id")] int id)
-    //{
-    //    _softwareService.DeleteById(id);
-    //    return Results.Ok();
-    //}
-
-    //[HttpPatch("Update")]
-    //public IResult Update([FromHeader(Name = "Id")] int id, [FromHeader(Name = "Name")] string name, [FromHeader(Name = "Price")] double price)
-    //{
-    //    _softwareService.Update(new() { Id = id, name = name, price = price });
-    //    return Results.Ok();
-    //}
+    [HttpPatch("Update")]
+    public IResult Update([FromHeader(Name = "Id")] int id, [FromHeader(Name = "Name")] string name, [FromHeader(Name = "Price")] double price)
+    {
+        var dbitem = _tomSoftwareService.GetByID(id);
+        if (dbitem == null)
+        {
+            return Results.NotFound("Item not in Database!");
+        }
+        dbitem.Name = name;
+        dbitem.Price = price;
+        _tomSoftwareService.Edit(dbitem);
+        return Results.Ok();
+    }
 
 }
