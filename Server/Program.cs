@@ -22,7 +22,7 @@ builder.Services.AddSingleton(new CarService());
 builder.Services.AddScoped<IEntityBaseRepository<WorkShopItem>, EntityBaseRepository<WorkShopItem>>();
 builder.Services.AddScoped<IEntityBaseRepository<Spielekonsole>, EntityBaseRepository<Spielekonsole>>();
 builder.Services.AddScoped<IGenericService<Spielekonsole>, GenericService<Spielekonsole>>();
-builder.Services.AddScoped<ITomSoftwareService, TomSoftwareService>();
+builder.Services.AddScoped<IGenericService<WorkShopItem>, GenericService<WorkShopItem>>();
 
 
 var app = builder.Build();

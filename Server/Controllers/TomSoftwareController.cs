@@ -13,50 +13,50 @@ namespace Server.Controllers;
 [Route("api/TomSoftware")]
 public class TomSoftwareController : ControllerBase
 {
-    private ITomSoftwareService _tomSoftwareService;
+    private IGenericService<WorkShopItem> _service;
 
-    public TomSoftwareController(ITomSoftwareService tomSoftwareService)
+    public TomSoftwareController(IGenericService<WorkShopItem> service)
     {
-        _tomSoftwareService = tomSoftwareService;
+        _service = service;
     }
 
     [HttpPost("Create")]
     public IResult Create([FromHeader(Name = "Name")] string name, [FromHeader(Name = "Price")] double price)
     {
-        _tomSoftwareService.Create(new() { Name = name, Price = price });
+        _service.Create(new() { Name = name, Price = price });
         return Results.Ok();
     }
 
     [HttpPost("FindByID")]
     public IResult FindByID([FromHeader(Name = "Id")] int id)
     {
-        return Results.Ok(_tomSoftwareService.GetByID(id));
+        return Results.Ok(_service.GetByID(id));
     }
 
     [HttpGet("FindAll")]
     public IResult FindAll()
     {
-        return Results.Ok(_tomSoftwareService.ListAll());
+        return Results.Ok(_service.ListAll());
     }
 
     [HttpDelete("Delete")]
     public IResult DelteByID([FromHeader(Name = "Id")] int id)
     {
-        _tomSoftwareService.DeleteByID(id);
+        _service.DeleteByID(id);
         return Results.Ok();
     }
 
     [HttpPatch("Update")]
     public IResult Update([FromHeader(Name = "Id")] int id, [FromHeader(Name = "Name")] string name, [FromHeader(Name = "Price")] double price)
     {
-        var dbitem = _tomSoftwareService.GetByID(id);
+        var dbitem = _service.GetByID(id);
         if (dbitem == null)
         {
             return Results.NotFound("Item not in Database!");
         }
         dbitem.Name = name;
         dbitem.Price = price;
-        _tomSoftwareService.Edit(dbitem);
+        _service.Edit(dbitem);
         return Results.Ok();
     }
 
