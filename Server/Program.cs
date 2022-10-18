@@ -13,7 +13,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IWatchOperations>(new WatchDatabaseAccess());
-builder.Services.AddSingleton<IInstrumentOperations>(new InstrumentDatabaseAccess());
 builder.Services.AddSingleton<ICameraOperations>(new CameraDatabaseAccess());
 builder.Services.AddSingleton<IInstrumentOperations>(new InstrumentDatabaseAccess());
 builder.Services.AddSingleton<Car.Api.ICarOperations>(new Car.DB.CarService());
