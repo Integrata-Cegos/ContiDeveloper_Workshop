@@ -8,13 +8,8 @@ public interface ITomSoftwareService
 {
 	public void DoIt();
 }
-public class TomSoftwareService
+public class TomSoftwareService : ITomSoftwareService
 {
-	public TomSoftwareService()
-	{
-
-	}
-
 	private readonly IEntityBaseRepository<WorkShopItem> _tomSoftwareRepository;
     public TomSoftwareService(
         IEntityBaseRepository<WorkShopItem> tomSoftwareRepository)
@@ -24,7 +19,7 @@ public class TomSoftwareService
 
 	public void DoIt()
 	{
-		_tomSoftwareRepository.Add(new() { Name = "TOM", Price = 1.22 });
+		_tomSoftwareRepository.Add(new() { Name = "TOM", Price = new Random().Next(1000) });
 		_tomSoftwareRepository.Commit();
         //this.DbContext.Database.EnsureCreated();
 	}

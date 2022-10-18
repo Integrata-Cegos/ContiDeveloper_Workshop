@@ -28,7 +28,7 @@ public partial class WorkShopDBContext : DbContext
     }
     public virtual void Commit()
     {
-        base.SaveChanges();
+         base.SaveChanges();
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

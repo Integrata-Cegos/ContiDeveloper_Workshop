@@ -1,6 +1,7 @@
 using Car.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Software.Service;
 using TomSoftware.Service;
@@ -19,7 +20,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new SoftwareService());
 builder.Services.AddSingleton(new CarService());
 builder.Services.AddScoped<IEntityBaseRepository<WorkShopItem>, EntityBaseRepository<WorkShopItem>>();
-builder.Services.AddSingleton<ITomSoftwareService, TomSoftwareService>();
+builder.Services.AddScoped<ITomSoftwareService, TomSoftwareService>();
 
 
 var app = builder.Build();

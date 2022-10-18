@@ -13,9 +13,9 @@ namespace Server.Controllers;
 [Route("api/TomSoftware")]
 public class TomSoftwareController : ControllerBase
 {
-    private TomSoftwareService _tomSoftwareService;
+    private ITomSoftwareService _tomSoftwareService;
 
-    public TomSoftwareController(TomSoftwareService tomSoftwareService)
+    public TomSoftwareController(ITomSoftwareService tomSoftwareService)
     {
         _tomSoftwareService = tomSoftwareService;
     }

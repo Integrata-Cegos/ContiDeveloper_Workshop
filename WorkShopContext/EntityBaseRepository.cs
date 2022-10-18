@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -152,6 +154,10 @@ public class EntityBaseRepository<T> : IEntityBaseRepository<T>
 
     public void Commit()
     {
+        // Create Tables in Database
+        //RelationalDatabaseCreator databaseCreator =
+        //(RelationalDatabaseCreator)DbContext.Database.GetService<IDatabaseCreator>();
+        //databaseCreator.CreateTables();
         DbContext.Commit();
     }
 }
